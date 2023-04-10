@@ -1,7 +1,9 @@
 project "implot"
    language "C++"
    cppdialect "C++17"
-   buildoptions {"-Wall", "-Wextra", "-Wpedantic", "-Wno-conversion", "-Wno-unused-parameter"}
+   filter "system:macosx"
+      buildoptions {"-Wall", "-Wextra", "-Wpedantic", "-Wno-conversion", "-Wno-unused-parameter"}
+   filter {}
    
    staticruntime "off"
    kind "StaticLib"
