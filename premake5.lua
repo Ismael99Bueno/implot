@@ -1,7 +1,7 @@
 project "implot"
    language "C++"
    cppdialect "C++17"
-   buildoptions {"-Wall", "-Wextra", "-Wpedantic", "-Wconversion", "-Wno-unused-parameter"}
+   buildoptions {"-Wall", "-Wextra", "-Wpedantic", "-Wno-conversion", "-Wno-unused-parameter"}
    
    staticruntime "off"
    kind "StaticLib"
