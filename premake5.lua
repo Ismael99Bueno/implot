@@ -1,14 +1,15 @@
 project "implot"
 language "C++"
 cppdialect "C++17"
+
 filter "system:macosx"
-buildoptions {
-   "-Wall",
-   "-Wextra",
-   "-Wpedantic",
-   "-Wno-conversion",
-   "-Wno-unused-parameter"
-}
+   buildoptions {
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wno-conversion",
+      "-Wno-unused-parameter"
+   }
 filter {}
 
 staticruntime "off"
@@ -22,4 +23,7 @@ files {
    "include/**.h"
 }
 
-includedirs "../**/include"
+includedirs {
+   "include",
+   "%{wks.location}/vendor/imgui/include",
+}
