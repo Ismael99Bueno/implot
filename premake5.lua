@@ -25,5 +25,5 @@ files {
 
 includedirs {
    "include",
-   "%{wks.location}/vendor/imgui/include",
+   "%{wks.location}/vendor/imgui",
 }
