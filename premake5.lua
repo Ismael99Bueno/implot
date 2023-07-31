@@ -19,11 +19,10 @@ targetdir("bin/" .. outputdir)
 objdir("build/" .. outputdir)
 
 files {
-   "src/**.cpp",
-   "include/**.h"
+   "*.cpp",
+   "*.h"
 }
 
 includedirs {
-   "include",
-   "%{wks.location}/vendor/imgui",
+   "%{wks.location}/vendor/imgui"
 }
